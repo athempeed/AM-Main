@@ -19,11 +19,14 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/favicon.ico"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/sass/paper-kit.scss",
+              "src/assets/css/demo.css",
+              "src/assets/css/nucleo-icons.css"
             ],
             "scripts": []
           },
@@ -50,7 +53,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "AM:build"
+            "browserTarget": "AM:build",
+            "port":9201
           },
           "configurations": {
             "production": {
@@ -72,7 +76,10 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/sass/paper-kit.scss",
+              "src/assets/css/demo.css",
+              "src/assets/css/nucleo-icons.css"
             ],
             "scripts": [],
             "assets": [

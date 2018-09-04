@@ -1,0 +1,13 @@
+.portfolio-content{
+    padding-top: 0!important;
+    position: relative;
+    z-index: 2;
+}
+
+.box-shadow{
+    box-shadow: 2px 9px 10px 2px #e6e5e5;
+}
+.box-shadow:hover{
+    box-shadow: 2px 5px 10px 2px #bbb9b9;
+    border-radius: 10px 10px 10px 10px;
+}
